@@ -1,0 +1,13 @@
+#app-root {
+  display: grid;
+  min-height: 100vh;
+}
+body {
+  @extend .bg-grey-200;
+  @extend .color-ms-500;
+
+  font-family: Noto Sans KR, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+}

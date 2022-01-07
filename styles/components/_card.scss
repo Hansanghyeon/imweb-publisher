@@ -1,0 +1,84 @@
+.card__s1 {
+  --card-p: 24px;
+  display: grid;
+  position: relative;
+  background-color: #fff;
+  grid-auto-rows: min-content;
+  width: 100%;
+
+  > :first-child {
+    padding-top: var(--card-p);
+  }
+  > :last-child {
+    padding-bottom: var(--card-p);
+  }
+
+  &-wrap {
+    padding-left: var(--card-p);
+    padding-right: var(--card-p);
+  }
+
+  &-thumbnail {
+    --aspect-w: 16;
+    --aspect-h: 9;
+
+    position: relative;
+    display: block;
+    padding-bottom: calc(var(--aspect-h) / var(--aspect-w) * 100%);
+    margin-bottom: 16px;
+
+    * {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+
+      @extend .gradient;
+    }
+  }
+  &-title {
+    @extend .color-ms-900;
+
+    font-size: 1.2em;
+    margin-bottom: 12px;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      @extend .color-primary-500;
+    }
+  }
+  &-excerpt {
+    font-size: 0.8em;
+    overflow: hidden;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+
+    > :first-child {
+      margin-top: 0;
+    }
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}

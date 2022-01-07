@@ -1,0 +1,36 @@
+@at-root {
+  :root {
+    --header-height: 60px;
+  }
+}
+
+.header__main {
+  @extend .bg-grey-500;
+
+  position: fixed;
+  z-index: 9000;
+  top: 0;
+  width: 100%;
+  left: 0;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height, 60px);
+  }
+
+  &-menu {
+    list-style: none;
+    display: flex;
+    column-gap: 40px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-logo {
+    span {
+      font-size: 0;
+    }
+  }
+}
