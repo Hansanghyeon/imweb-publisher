@@ -1,0 +1,61 @@
+@at-root {
+  :root {
+    --header-height: 60px;
+  }
+}
+
+.header__main {
+  @extend .bg-grey-500;
+
+  position: fixed;
+  z-index: 9000;
+  top: 0;
+  width: 100%;
+  left: 0;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height, 60px);
+  }
+
+  &-menu {
+    list-style: none;
+    display: flex;
+    column-gap: 40px;
+    padding: 0;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      transition: color 0.3s ease;
+      color: inherit;
+
+      &:hover {
+        @extend .color-primary-500;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &-logo {
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+    span {
+      font-size: 0;
+    }
+  }
+
+  &-menuBtn {
+    font-size: 32px;
+
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+}
