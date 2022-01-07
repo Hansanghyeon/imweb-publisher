@@ -2,13 +2,138 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="./public/fonts/fontello/css/fontello.css">
   <title>아임웹 | Web Publisher 코드 과제</title>
 </head>
 
 <body>
+  <header class="header__main">
+    <div class="container header__main-container">
+      <a href="#" class="header__main-logo">
+        <span>Logo</span>
+        <img src="./public/images/logoipsum-logo-7.svg" alt="홈페이지">
+      </a>
+      <ul class="header__main-menu">
+        <li>
+          <a href="#">menu1</a>
+        </li>
+        <li>
+          <a href="#">menu2</a>
+        </li>
+        <li>
+          <a href="#">menu3</a>
+        </li>
+      </ul>
+      <button id="menuCoverBtn" class="btn header__main-menuBtn">
+        <i class="icon-menu-1">
+          <span class="hidden">메뉴버튼</span>
+        </i>
+      </button>
+    </div>
+  </header>
+  <div id="app-root">
+    <main class="layout__main">
+      <div class="container">
+        <div class="main-content">
+          <div class="card__s1">
+            <div class="card__s1-wrap">
+              <a href="#" class="card__s1-thumbnail">
+                <img src="https://picsum.photos/1920?random=0">
+              </a>
+            </div>
+            <div class="card__s1-wrap">
+              <a href="#" class="card__s1-title">What is Lorem Ipsum?</a>
+            </div>
+            <div class="card__s1-wrap">
+              <div class="card__s1-excerpt">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into
+                  electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release
+                  of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card__s1">
+            <div class="card__s1-wrap">
+              <a href="#" class="card__s1-thumbnail">
+                <img src="https://picsum.photos/1920?random=1">
+              </a>
+            </div>
+            <div class="card__s1-wrap">
+              <a href="#" class="card__s1-title">Why do we use it?</a>
+            </div>
+            <div class="card__s1-wrap">
+              <div class="card__s1-excerpt">
+                <p>
+                  It is a long established fact
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card__s1">
+            <div class="card__s1-wrap">
+              <a href="#" class="card__s1-thumbnail">
+                <img src="https://picsum.photos/1920?random=2">
+              </a>
+            </div>
+            <div class="card__s1-wrap">
+              <a href="#" class="card__s1-title">Where does it come from?</a>
+            </div>
+            <div class="card__s1-wrap">
+              <div class="card__s1-excerpt">
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                  classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                  professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                  consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                  literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
+                  "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book
+                  is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
+                  Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p>
+                <p>
+                  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                  Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+                  their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <script src="./script.js"></script>
+  </footer>
+  <div id="headerCover" class="header__cover">
+    <div class="container header__cover-container">
+      <ul class="header__cover-menu">
+        <li>
+          <a href="#">menu1</a>
+        </li>
+        <li>
+          <a href="#">menu2</a>
+        </li>
+        <li>
+          <a href="#">menu3</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </body>
 
 </html>
