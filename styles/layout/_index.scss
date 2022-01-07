@@ -1,7 +1,12 @@
+@at-root {
+  :root {
+    --section-py: 60px;
+  }
+}
 .layout {
   &__main {
     margin-top: var(--header-height);
-    padding-top: 60px;
-    padding-bottom: 120px;
+    padding-top: var(--section-py);
+    padding-bottom: calc(var(--section-py) * 2);
   }
 }

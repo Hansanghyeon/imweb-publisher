@@ -10,4 +10,31 @@ body {
     BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
     sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
     Noto Color Emoji;
+
+  &.body-scroll-lock {
+    overflow: hidden;
+    padding-right: 4px;
+    @media screen and (max-width: 375px) {
+      padding-right: 0;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(#d6d6d6, 0.6);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(#767676, 0.6);
+    border-radius: 999px;
+  }
 }
