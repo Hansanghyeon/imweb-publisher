@@ -1,6 +1,10 @@
 @at-root {
   :root {
-    --section-py: 60px;
+    --section-py: 30px;
+
+    @media screen and (min-width: 768px) {
+      --section-py: 60px;
+    }
   }
 }
 .layout {
