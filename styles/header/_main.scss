@@ -56,7 +56,9 @@
   &-menuBtn {
     font-size: 32px;
     @extend .color-ms-500;
+    transform: translateX(-8px);
     transition: color 0.3s ease;
+
     &:hover {
       @extend .color-primary-300;
     }

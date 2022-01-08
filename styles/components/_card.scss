@@ -5,9 +5,11 @@
   background-color: #fff;
   grid-auto-rows: min-content;
   width: 100%;
+  font-size: 0.8rem;
 
   @media screen and (min-width: 768px) {
     --card-p: 24px;
+    font-size: 1rem;
   }
 
   > :first-child {
@@ -23,11 +25,19 @@
   }
 
   &-titleWrap {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+    }
   }
 
   &-thumbnailWrap {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
   }
 
   &-thumbnail {
